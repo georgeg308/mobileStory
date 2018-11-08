@@ -1,0 +1,26 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:maps="nativescript-google-maps-sdk"
+    showingModally="onShownModally">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Select Location"></Label>
+    </ActionBar>
+
+    <StackLayout>
+        <!-- Add your page content here -->
+            <maps:mapView height="50%" id="mv" latitude="{{ latitude }}" longitude="{{ longitude }}" 
+    								zoom="{{ zoom }}" bearing="{{ bearing }}" 
+    								tilt="{{ tilt }}" padding="{{ padding }}" mapReady="onMapReady"  
+   								markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
+   								markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
+                                   cameraChanged="onCameraChanged" coordinateTapped="coordTapped"
+   								 />
+
+            <Label class="h3" text="Address:" textWrap="true"></Label>
+            <Label class="h3" id="addr"  text="" textWrap="true"></Label>
+
+        <Button text="Confirm Location" tap="confirm" />
+    </StackLayout>
+</Page>

@@ -1,0 +1,36 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Book Details"></Label>
+
+    </ActionBar>
+ 
+        <ScrollView width="100%" height="100%">
+            <StackLayout id="mainGrid"   width="auto"  >
+
+                    <!-- Add your page content here -->
+
+                    <TextField  hint="Title" text="{{title}}" />
+                    <TextField  hint="Author" text="{{author}}" />
+                    <TextField  hint="Locations" text="{{locations}}" />
+                    <TextField  hint="Description" text="{{description}}" />
+                    
+                    <StackLayout id="chapter">
+                    <Label  id="ch" text="Chapters"/>
+                   <ListView height="300"  items="{{ chapters }}" itemTap="ListViewItemTap" class="list-group">
+                        <ListView.itemTemplate>
+                            <StackLayout class="list-group-item">
+                                <Label text="{{ title || 'Downloading...' }}" textWrap="true" class="title" />
+                            </StackLayout>
+                        </ListView.itemTemplate>
+                    </ListView>
+                    </StackLayout>
+                
+
+            </StackLayout>
+        </ScrollView>
+
+ 
+</Page>

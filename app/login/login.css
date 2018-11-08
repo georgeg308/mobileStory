@@ -1,0 +1,7 @@
+
+
+StackLayout{margin-top:10%;margin-left:10%;margin-right:10%}
+TextField{margin-bottom:3%;
+border-width: 0 0 2 0;
+border-bottom-color: lightgray}
+Button{font-size: 24pt}

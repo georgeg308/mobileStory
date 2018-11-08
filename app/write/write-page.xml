@@ -1,0 +1,32 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="{{title,'Writing Chapter - ' +  title}}"></Label>
+
+    </ActionBar>
+    <StackLayout>
+        <ScrollView width="100%" height="88%">
+            <StackLayout id="mainGrid"   width="auto"  >
+
+                    <!-- Add your page content here -->
+
+                    <TextField  hint="Title" text="{{title}}" />
+                    <TextView   hint="Start writing!" lineHeight="9"  height = "auto">
+                    
+                    </TextView>
+
+            </StackLayout>
+        </ScrollView>
+        <ScrollView orientation="horizontal" width="auto" height="12%">
+            <GridLayout columns="auto,auto,auto,auto,auto"  backgroundColor="lightgray">
+                <Button col="0" tap = "addImage" text="Image"/>
+                <Button col="1" tap = "addLocation" text="Location"/>
+                <Button col="2" tap = "saveChapter" text="Save"/>
+                <Button col="3" tap = "nextPart" text="Next Part"/>
+                <Button col="4" tap = "publish" text="Publish"/>
+            </GridLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>

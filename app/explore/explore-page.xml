@@ -1,0 +1,14 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Explore"></Label>
+    </ActionBar>
+
+    <GridLayout columns="auto, auto, auto" rows="auto, auto, auto">
+        <!-- Add your page content here -->
+
+    
+    </GridLayout>
+</Page>

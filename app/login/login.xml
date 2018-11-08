@@ -1,0 +1,16 @@
+<Page loaded="loaded">
+     <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Login"></Label>
+    </ActionBar>
+    <StackLayout orientation="vertical">
+
+    
+        <TextField id="email" text="georgeg308@hotmail.com" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+        <TextField id = "password" secure="true" text="testing" hint="Password" />
+
+        <Button text="Sign in" tap="signIn" />
+        <Button text="Register" tap="register" />
+
+
+    </StackLayout>
+</Page>

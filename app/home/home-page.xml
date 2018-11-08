@@ -1,0 +1,22 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout columns="auto, auto, auto" rows="auto, auto, auto">
+        <!-- Add your page content here -->
+
+        <Button row="0" col="0" text="Read" tap="read" />
+        <Button row="0" col="1" text="My Shelf" tap="shelf" />
+        <Button row="1" col="0" text="Explore" tap="explore" />
+        <Button row="1" col="1" text="Search" tap="search" />
+        <Button row="2" col="0" text="Write" tap="write" />
+        <Button row="2" col="1" text="Profile" tap="profile" />
+
+        
+
+    </GridLayout>
+</Page>

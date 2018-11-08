@@ -1,0 +1,35 @@
+
+
+
+
+
+.content{margin-top: 8%;}
+
+TextView{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    color: black;
+    font-size: 18pt;
+}
+
+TextField{
+    text-align: center;
+ 
+    color: black;
+    font-size: 24pt;
+    width: 90%;
+
+
+}
+
+#mainGrid{
+    margin-top: 2%;
+   
+}
+
+Image{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
